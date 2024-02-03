@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div>
+    <mat-list>
+      <ng-container *ngFor="let item of headerLinks">
+        <mat-list-item>{{ item }}</mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+      </ng-container>
+    </mat-list>
+  </div>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> <mat-icon>flag</mat-icon></mat-panel-title>
+      <mat-panel-description>choose your country</mat-panel-description>
+    </mat-expansion-panel-header>
+    <p *ngFor="let item of countries">{{ item }}</p>
+  </mat-expansion-panel>
+</div>

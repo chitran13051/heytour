@@ -1,0 +1,13 @@
+.header-container{
+    display: flex;
+}
+
+mat-list {
+    display: flex;
+    background-color: #77c4ff;
+}
+
+mat-list-item {
+    font-size: small;
+    text-align: left;
+}
