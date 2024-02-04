@@ -1,0 +1,18 @@
+<section class="home">
+  <div>
+    <a [routerLink]="['/']">
+      <header class="brand-name">
+        <img
+          class="brand-logo"
+          src="/assets/heytour_logo.jpeg"
+          alt="logo"
+          aria-hidden="true"
+        />
+      </header>
+    </a>
+  </div>
+  <app-header></app-header>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</section>

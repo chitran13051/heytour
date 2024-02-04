@@ -6,6 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -19,17 +20,17 @@ import { MatIconModule } from '@angular/material/icon';
     MatExpansionModule,
     MatIconButton,
     MatIconModule,
+    RouterModule,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
   headerLinks = [
-    'Contact',
-    'Newsletter',
-    'Reisburo',
-    'My Account',
-    'Merkezette',
+    { route: 'contact', label: 'Contact' },
+    { route: 'blog', label: 'Blog' },
+    { route: 'agency', label: 'Reiseburo' },
+    { route: 'login', label: 'My Account' },
   ];
 
   countries = ['germany', 'china', 'england', 'uruguay', 'japan'];
