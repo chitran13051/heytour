@@ -1,7 +1,7 @@
 <mat-list-item>
   <div class="link">
     <mat-icon fontIcon="{{ account.logo }}"></mat-icon>
-    <span [matMenuTriggerFor]="myAccount">
+    <span style="font-size: small" [matMenuTriggerFor]="myAccount">
       {{ account.label }}
     </span>
     <mat-menu #myAccount="matMenu">
@@ -13,9 +13,6 @@
           >Neu Kunde? <a href="">Jeztz Konto erstellen</a></span
         >
       </div>
-      <!-- <button mat-menu-item [matMenuTriggerFor]="myAccountList">
-        My Konto
-      </button> -->
       <div class="accountLinks">
         <ng-container *ngFor="let link of accountLinks">
           <a
