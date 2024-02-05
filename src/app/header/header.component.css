@@ -1,15 +1,30 @@
 .header-container{
-    width: 50%;
-    position: absolute;
-    right: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
 }
+.link{
+    display: flex;
 
+}
 mat-list {
     display: flex;
+    width: 75%;
+    margin-left: auto;
     /* background-color: #ffd740;; */
 }
 
+/* mat-list:first-child {
+    border-right-color: transparent;
+} */
+
 mat-list-item {
+    text-align: end;
+    border-right: 1px solid white;
+}
+
+
+a {
     font-size: small;
-    text-align: left;
+    text-decoration: none;
+    color: rgb(2, 2, 88);
 }

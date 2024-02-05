@@ -1,1 +1,33 @@
-<p>login works!</p>
+<mat-list-item>
+  <div class="link">
+    <mat-icon fontIcon="{{ account.logo }}"></mat-icon>
+    <span [matMenuTriggerFor]="myAccount">
+      {{ account.label }}
+    </span>
+    <mat-menu #myAccount="matMenu">
+      <div class="login">
+        <button class="login-Btn" mat-menu-item mat-button color="primary">
+          Anmelden
+        </button>
+        <span class="newUserText"
+          >Neu Kunde? <a href="">Jeztz Konto erstellen</a></span
+        >
+      </div>
+      <!-- <button mat-menu-item [matMenuTriggerFor]="myAccountList">
+        My Konto
+      </button> -->
+      <div class="accountLinks">
+        <ng-container *ngFor="let link of accountLinks">
+          <a
+            [routerLink]="['/' + link.route]"
+            routerLinkActive="router-link-active"
+          >
+            <div class="linkLabel">
+              <span>{{ link.label }}</span>
+            </div>
+          </a>
+        </ng-container>
+      </div>
+    </mat-menu>
+  </div>
+</mat-list-item>

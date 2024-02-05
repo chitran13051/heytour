@@ -1,5 +1,5 @@
 :host {
-    --prime: rgb(231, 240, 248);
+    --prime: #77c4ffa1;
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
     --french-violet: oklch(47.66% 0.246 305.88);
@@ -55,8 +55,10 @@ p {
 }
 main {
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     min-height: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--prime);
     box-sizing: inherit;
    

@@ -1,0 +1,23 @@
+.link {
+    display: flex;
+  
+}
+.login {
+    padding: 30px 20px;
+    border-bottom: 1px solid blue;
+    font-size: small;
+}
+.login-Btn{
+   border-radius: 30px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 10px;
+}
+.accountLinks{
+   padding: 20px;
+}
+a {
+    font-size: small;
+    text-decoration: none;
+    color: rgb(2, 2, 88);
+}

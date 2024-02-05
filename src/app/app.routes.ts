@@ -21,9 +21,9 @@ export const routes: Routes = [
     component: AgencyComponent,
     title: 'Agency',
   },
-  {
-    path: 'login',
-    component: LoginComponent,
-    title: 'My Account',
-  },
+  //   {
+  //     path: 'login',
+  //     component: LoginComponent,
+  //     title: 'My Account',
+  //   },
 ];

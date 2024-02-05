@@ -1,20 +1,20 @@
 <div class="header-container">
-  <div>
-    <mat-list>
-      <ng-container *ngFor="let item of headerLinks; let last = last">
-        <mat-list-item>
-          <a
-            mat-raised-button
-            color="accent"
-            [routerLink]="['/' + item.route]"
-            routerLinkActive="router-link-active"
-            >{{ item.label }}</a
-          >
-        </mat-list-item>
-        <!-- <mat-divider class="divider" [vertical]="true"></mat-divider> -->
-      </ng-container>
-    </mat-list>
-  </div>
+  <mat-list>
+    <ng-container *ngFor="let link of headerLinks">
+      <mat-list-item>
+        <a
+          [routerLink]="['/' + link.route]"
+          routerLinkActive="router-link-active"
+        >
+          <div class="link">
+            <mat-icon fontIcon="{{ link.logo }}"></mat-icon>
+            <span>{{ link.label }}</span>
+          </div>
+        </a>
+      </mat-list-item>
+    </ng-container>
+    <app-login></app-login>
+  </mat-list>
   <!-- <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title> <mat-icon>flag</mat-icon></mat-panel-title>
